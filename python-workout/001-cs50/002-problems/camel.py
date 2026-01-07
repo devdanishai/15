@@ -30,10 +30,10 @@
 camel = input("camelCase: ")
 snake = ""
 
-for char in camel:
-    if char.isupper():
-        snake += "_" + char.lower()
+for i in camel:
+    if i.isupper():
+        snake += "_" + i.lower()
     else:
-        snake += char
+        snake += i
 
 print("snake_case:", snake)
