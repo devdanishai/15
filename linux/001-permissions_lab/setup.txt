@@ -1,0 +1,38 @@
+```bash
+echo "print('Hello world')" > script.py
+echo "some data" > data.txt
+mkdir models
+
+# run for test it will show 'permission denied'
+./script.py
+
+# fix ownership
+chmod +x script.py
+
+# verify
+ls -l script.py
+
+# 
+chmod o-x script.py
+________________
+
+echo "print(hi)" > code.py
+#!/usr/bin/env python3
+ls -l code.py
+output
+-rw-rw-r-- 1 dell dell 12 نومبر 11 12:28 code.py
+
+# now run following command
+ ./code.py
+
+# make executeable
+chmod +x code.py
+ls -l code.py
+output:
+-rwxrwxr-x 1 dell dell 12 نومبر  11 12:28 code.py
+
+# now run following command
+ ./code.py
+
+
+
