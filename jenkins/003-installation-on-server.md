@@ -1,7 +1,6 @@
 
 
-# Server Setup: 
-Install Jenkins on Ubuntu 
+# Install Jenkins on Ubuntu
 ### 1. Install Java (required)
 ```bash
 sudo apt update
@@ -33,7 +32,6 @@ sudo systemctl status jenkins
 # access jenkin password:
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 # output 
-
 a56566c6a8d1457d9e9d2e836ee7dd12
 
 # allow port if not
@@ -46,7 +44,7 @@ http://localhost:8080
 
 ```bash
 # add your password : mine is this 
-a56566c6a8d1457d9e9d2e836ee7dd12
+1128858134b84ba0a403044c2428202b
 ```
 ### Finish Setup
 

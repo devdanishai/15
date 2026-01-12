@@ -1,0 +1,57 @@
+pipeline {
+    agent any
+
+    environment {
+        DEPLOY_DIR = "/home/jenkins-deploy-node"
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo "Checking out local Node.js app..."
+                sh 'rm -rf ./* ./.git || true'
+                sh 'git clone /var/lib/jenkins/jenkins-node-app .'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                echo "Installing Node.js dependencies..."
+                sh 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Building Node.js app..."
+                sh 'echo Build complete!'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running Node.js tests..."
+                sh 'node test.js'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying Node.js app..."
+                sh 'mkdir -p $DEPLOY_DIR'
+                sh 'cp -r * $DEPLOY_DIR/'
+                sh 'echo "Deployed to $DEPLOY_DIR"'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
