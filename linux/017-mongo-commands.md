@@ -7,4 +7,9 @@
   }
 }
 
+# backup mongodb data in 61
+mongodump --out "/mnt/storage/mongodb-backups/backup-$(date +%F)" --gzip
+
+
 ```
+
