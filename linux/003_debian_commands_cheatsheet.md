@@ -69,6 +69,7 @@ ping      # test connectivity
 curl      # transfer data from URLs (apt install curl)
 wget      # download files
 ip a      # show IP addresses
+ifconfig  # show ip addresses
 ss -tulnp # show listening ports & processes
 scp       # secure copy over ssh
 ssh       # connect to remote server
@@ -105,6 +106,8 @@ sudo adduser username   # add user
 sudo passwd username    # change user password
 su - username           # switch user
 sudo <command>          # run as root
+
+
 ```
 
 ## 🔹 Disk & File System
