@@ -3,6 +3,9 @@
 sudo netstat -tulpn | grep :3001
 # or
 sudo ss -tulnp | grep 3001
+# or
+sudo ss -tulpn | grep -E ':(8108)\s'
+
 
 # output:
 tcp6       0      0 :::3001                 :::*                    LISTEN      843503/next-server 
@@ -19,4 +22,5 @@ output:
 3. find which command use to run file 
 ```bash
 ps -fp 3207476
+
 ```
