@@ -4,7 +4,7 @@ sudo netstat -tulpn | grep :3001
 # or
 sudo ss -tulnp | grep 3001
 # or
-sudo ss -tulpn | grep -E ':(8108)\s'
+sudo ss -tulpn | grep -E ':(8200)\s'
 
 
 # output:
