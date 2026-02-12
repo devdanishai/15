@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/todos", todoRoutes);
-
+app.use("/api/auth", require("./routes/authRoutes"));
 // last middleware
 app.use(errorHandler);
 

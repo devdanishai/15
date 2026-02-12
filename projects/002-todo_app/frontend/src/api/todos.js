@@ -23,3 +23,8 @@ export async function deleteTodo(id) {
   const res = await api.delete(`/todos/${id}`);
   return res.data;
 }
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) config.headers.Authorization = `Bearer ${token}`;
+  return config;
+});

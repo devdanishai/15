@@ -5,8 +5,12 @@ const {
   updateTodo,
   deleteTodo
 } = require("../controllers/todoController");
+const protect = require("../middleware/auth");
 
 const router = express.Router();
+
+// Protect all todo routes
+router.use(protect);
 
 router.get("/", (req, res, next) => getTodos(req, res).catch(next));
 router.post("/", (req, res, next) => createTodo(req, res).catch(next));

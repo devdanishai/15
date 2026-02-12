@@ -248,3 +248,9 @@ Do you want the frontend to use:
 - **axios** (install one package, simpler API)?
 
 Reply: `fetch` or `axios`.
+
+
+
+-----
+kill process on specific port:
+`sudo fuser -k 5000/tcp`
