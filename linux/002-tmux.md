@@ -29,6 +29,7 @@ ________________________
 
 ### commands inside session
 ```bash
+Ctrl + b  then  c   → next window
 Ctrl + b  then  n   → next window
 Ctrl + b  then  p   → previous window
 Ctrl + b  then  0   → go to window #0
