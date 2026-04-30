@@ -3,6 +3,7 @@
 sudo netstat -tulpn | grep :3001
 # or
 sudo ss -tulnp | grep 3001
+
 # or
 sudo ss -tulpn | grep -E ':(8109)\s'
 
@@ -23,4 +24,9 @@ output:
 ```bash
 ps -fp 3207476
 
+```
+
+4. if wanna killl process 
+```bash
+sudo kill 4028402
 ```

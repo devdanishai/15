@@ -12,3 +12,9 @@ diff -y --suppress-common-lines 016-20kv8n-app/main.py v016/main.py
 diff -y --suppress-common-lines 2025-12-8-016-20kv8n-app/main.py 2025-12-8-016-20kv8n-30c/main.py
 
 diff -y --suppress-common-lines 016-20kv8n-app/config.json 020-night/config.json
+
+diff -y --surpress-common-lines 016-20kv8n-app/database.py 023-9c/database.py
+
+diff -y --suppress-common-lines prod.json test.json
+
+diff -y --suppress-common-lines main.py main-new.py
