@@ -24,4 +24,9 @@ git commit -m "ur updated comment"
 # if use "git push -u origin main" then only "git push" is ok
 git push
 git status
+
+# after deleting files from ypur projetc use folloing for push
+git add -A
+git commit -m "Remove white-list files"
+git push
 ```
