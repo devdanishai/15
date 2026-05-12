@@ -50,5 +50,10 @@ git diff config.json
 #wanna remove any file from stage
 git restore --staged index.html
 
+# wanna undo changes use 
+git checkout .
+
+# or
+git reset --hard HEAD
 ```
 

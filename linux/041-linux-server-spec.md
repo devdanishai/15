@@ -1,0 +1,5 @@
+```bash
+unmae -a
+
+#output:
+Linux aiops-test 6.8.0-94-generic #96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2 x86_64 x86_64 x86_64 GNU/Linux

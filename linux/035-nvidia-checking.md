@@ -26,6 +26,9 @@ _______________
 # gpu health
 nvidia-smi
 
+# GPU
+nvtop
+
 # disk
 df -h
 
@@ -39,8 +42,14 @@ uptime
 ollama --version
 ollama ps
 
+
 # running services 
 ps aux | grep python
+
+# linux version
+lsb_release -a
+cat /etc/*release
+
 ____________
 sudo apt update
 sudo apt install -y sysstat
