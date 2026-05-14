@@ -5,9 +5,9 @@ npm install -g @anthropic-ai/claude-code
 
 claude --version
 
-ollama launch claude --model qwen3:32b
+ollama launch claude --model qwen3:32b 
 ollama launch claude --model qwen3-coder:30b 
-ollama launch claude --model qwen3.6:latest
+ollama launch claude --model qwen3-vl:235b-instruct-cloud 
 ```
 
 # Server
